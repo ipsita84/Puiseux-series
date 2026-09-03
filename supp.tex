@@ -1,0 +1,202 @@
+\documentclass[aps, prl, onecolumn, nofootinbib, citeautoscript, nolongbibliography]{revtex4-2} 
+
+
+\synctex=1 
+
+
+\usepackage[papersize={8.5in,11in}]{geometry}
+
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{
+	bookmarks=true,         % show bookmarks bar?
+	unicode=false,          % non-Latin characters 
+	pdftoolbar=true,        % show Acrobat
+	pdfmenubar=true,        % show Acrobat 
+	pdffitwindow=false,     % window fit to page when opened
+	pdfstartview={FitH},    % fits the width of the page to the window
+	pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+	pdfnewwindow=true,      % links in new window
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,           % color of internal links (change box color with linkbordercolor)
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,      % color of file links
+	urlcolor=blue           % color of external links
+} 
+
+\geometry{top=1.2 cm, left= 1.2 cm, right= 1.2 cm, bottom= 1.2 cm}        
+
+
+\usepackage{amsmath,amssymb, ulem, float} 
+\usepackage{comment, cancel}
+\usepackage[version=4]{mhchem}
+\usepackage{dcolumn}
+\usepackage[tight]{subfigure} 
+\usepackage[dvipsnames]{xcolor} 
+\usepackage{color, enumitem}
+\usepackage{amssymb,amsmath}
+\usepackage{tabularx, graphicx}
+\usepackage{bbm,bm,array,physics}
+\usepackage{dsfont}
+ 
+
+
+\newcommand{\bk}{\boldsymbol{k}}
+\newcommand{\bp}{\boldsymbol{p}}
+\newcommand{\bq}{\boldsymbol{q}}
+
+\def \nn{\nonumber \\}
+
+
+
+
+\newcommand{\ve}{{\varepsilon}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+
+
+\title{Supplemental Material for ``Puiseux series about exceptional singularities dictated by symmetry-allowed Hessenberg forms of perturbation matrices''}
+
+\author{Ipsita Mandal}
+\email{ipsita.mandal@snu.edu.in}
+
+
+\affiliation{Department of Physics, Shiv Nadar Institution of Eminence (SNIoE), Gautam Buddha Nagar, Uttar Pradesh 201314, India}
+
+\maketitle
+
+In this supplemental material, we derive the characteristics of P- and C-symmetric $4\times 4$ complex matrices. 
+
+
+%%%%%%%%%%%%%%%%%%
+\section{P-symmetric $4 \times 4$ matrix}
+\label{app1}
+
+We impose P-symmetry on a $4\times 4$ non-Hermitian matrix, which constrains its form to \cite{ips-emil}
+\begin{align}
+\mathcal H^{\rm P}_4 = \begin{bmatrix}
+ 0 & 0 & a & b \\
+ 0 & 0 & c & d \\
+ e & f & 0 & 0 \\
+ g & h & 0 & 0 \\
+\end{bmatrix}, \quad
+%%%%%%%%%%%%%%%%%%%
+P = \text{diag}\lbrace 1,\,1,\,-1,\,-1 \rbrace ,\quad
+P\,\mathcal H^{\rm P}_4\, P^{-1} = - \, \mathcal H^{\rm P}_4 \,.
+\end{align}
+The $4 \times 4 $ matrix $P$ forms a 4-dimensional realisation of the P-symmetry. 
+For $ a = b\, c/d $ and $ g= -\, (a \,e+c\, f+d\, h)/b $, it hosts an EP$_4$ with the 4-fold-degenerate eigenvalue, $\lambda = 0$. At the defective point, its Jordan-normal form is
+\begin{align}
+S^{-1} \, {\mathcal H^{\rm P}_{\rm EP}} \, S = \mathcal J_4(0)\,, \text{ with }
+%%%%%%%%%%%%%%%%%%%%%
+S = \begin{bmatrix}
+0 & -\frac{ b\, d}{b \,c\, e+c\, d\, f} & 0 & -\frac{ b\, d^3 h}{c^2 \, (b \,e+d\, f)^2 \, (c\, f+d \,h)} \\
+ 0 & -\frac{d^2}{b \,c\, e+c\, d\, f} & 0 & -\frac{d^2 (b \,c\, e +d \, (c\, f+d \,h))}{c^2 \, (b \,e+d\, f)^2 \, (c\, f+d \,h)} \\
+ -\frac{d}{c} & 0 & -\frac{d^2}{c^2 \, (b \,e+d\, f)} & 0 \\
+ 1 & 0 & 0 & 0
+\end{bmatrix} 
+\text{ and }
+{\mathcal H^{\rm P}_{\rm EP}}  = {\mathcal H^{\rm P}_4} \Big \vert_{a = \frac{b\, c} {d},\; g= \frac{a \,e+c\, f+d\, h}{ -\,b}}.
+\end{align}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Now let us add a P-symmetric perturbation, $\epsilon\, \tilde B^{\rm P}_{4,4}$, to ${\mathcal H^{\rm P}_{\rm EP}}$, with
+\begin{align}
+\tilde B^{\rm P}_{4,4} = \begin{bmatrix}
+0 & 0 & a_1 & a_2 \\
+ 0 & 0 & a_3 & a_4 \\
+ a_5 & a_6 & 0 & 0 \\
+ a_7 & a_8 & 0 & 0 \\
+\end{bmatrix}.
+\end{align}
+Explicit calculation shows that $S^{-1}\, \tilde B^{\rm P}_{4,4}\, S $ is an upper-4 Hessenberg matrix, $ B_{4,4}$, which we do not write here explicitly due to its lengthy expression. All the 4 eigenvalues behave as $ \epsilon^{1/4} $, which also we do not show here due to their complicated analytical forms.
+
+
+
+%\begin{widetext}
+%%%%%%%%%%%%%%
+\section{C-symmetric $4 \times 4$ matrix}
+\label{app2}
+
+We impose C-symmetry on a $4\times 4$ non-Hermitian matrix, such that it gets constrained to the form,
+\begin{align}
+\label{eqcdim4}
+\mathcal H^{\rm C}_4 = \begin{bmatrix}
+a & b & c & 0 \\
+ d & e & 0 & c \\
+ g & 0 & -e & b \\
+ 0 & g & d & -a \\
+\end{bmatrix}, \quad
+%%%%%%%%%%%%%%%%%%%
+C =  \begin{bmatrix}
+ 0 & 0 & 0 & -1 \\
+ 0 & 0 & 1 & 0 \\
+ 0 & 1 & 0 & 0 \\
+ -1 & 0 & 0 & 0 \\
+\end{bmatrix},\quad
+C \left( \mathcal H^{\rm C}_4 \right)^T C^{-1} = \epsilon_c  \, \mathcal H^{\rm C}_4 \text{ with } \epsilon_c = -1 \,.
+\end{align}
+The $4 \times 4 $ matrix $C$ forms a 4-dimensional realisation of the C-symmetry with $\epsilon_c=-1$. 
+For $ c = -\,(a+e)^2 /(4\, g) $ and $ d= -\,(a^2+2 \,c\, g+e^2)/(2 \,b)$, it hosts an EP$_4$ with the 4-fold-degenerate eigenvalue, $\lambda = 0$. At the defective point, its Jordan-normal form is
+\begin{align}
+& S^{-1} \, {\mathcal H^{\rm C}_{\rm EP}} \, S =  \begin{bmatrix}
+\mathcal J_1(0) & 0 \\
+ 0 & \mathcal J_3(0) \\
+\end{bmatrix}, \text{ with }
+%%%%%%%%%%%%%%%%%%%%%
+S = \begin{bmatrix}
+ 0 & -\frac{b (a+e)^2}{2 g} & 0 & 0 \\
+ \frac{(a+e)^2}{8 b g} & \frac{(a-e) (a+e)^2}{4 g} & -\frac{(a+e)^2}{4 g} & 0 \\
+ \frac{1}{2} & -b (a+e) & b & 0 \\
+ \frac{e}{2 b} & \frac{1}{2} (a-e) (a+e) & -a & 1 \\
+\end{bmatrix} \nn
+& \text{and }
+{\mathcal H^{\rm C}_{\rm EP}}  = {\mathcal H^{\rm C}_4} 
+\Big \vert_{c = -\frac{(a+e)^2}{4\, g},\; d = -\frac{a^2+2 \,c\, g+e^2}{2 \,b} }.
+\end{align}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Intriguingly, the Jordan-normal form is split into into Jordan blocks, which needs special care. In the Jordan normal basis, if we add a perturbation of the form, 
+\begin{align}
+\mathcal B = \epsilon \begin{bmatrix}
+ 0 & 0 \\
+0  & B_{3,2}\\
+\end{bmatrix}, \text{ setting }
+%%%%%%%%%%%%%%%%
+B_{3,2} = \begin{bmatrix}
+ a_1 & 0 & 0 \\
+ 1 & 0 & 0 \\
+0 & 1 & -a_1 \\
+ \end{bmatrix},
+\end{align}
+where $B_{3,2}$ is an $3$-dimensional upper-2 Hessenberg matrix
+This preserves the PT-symmetric form shown in Eq.~\eqref{eqcdim4}, because
+\begin{align}
+S^{-1} {\mathcal B} \,S = \epsilon \begin{bmatrix}
+  a_1 & 0 & 0 & 0 \\
+ \frac{a_1 (e-a)+1} {2\, b} & 0 & 0 & 0 \\
+ \frac{2 \,g \left(a_1 (a+e)-1\right)}{(a+e)^2} & 0 & 0 & 0 \\
+ 0 & \frac{2 \,g \left(a_1 (a+e)-1\right)}{(a+e)^2} & \frac{a_1 (e-a)+1}{2 \,b} & -a_1 \\
+ \end{bmatrix}.
+\end{align}
+%%%%%%%%%%%%%%%%%%%%%
+Replacing $B_{3,2}$ by a $B_{3,3}$ matrix does not preserve the C-symmetric form and, hence, is not allowed. This simple example tells us that the
+eigensystem splitting away from the EP$_4$ should be the same as the C-symmetric 3-band models, namely $\propto \epsilon^{1/2}$.
+%%%%%%%%%%%%%%%%
+Therefore, adding a C-symmetric perturbation with generic parameters, for example
+\begin{align}
+\epsilon \begin{bmatrix}
+ a_1 & a_2 & a_3 & 0 \\
+ a_4 & a_5 & 0 & a_3 \\
+ a_6 & 0 & -a_5 & a_2 \\
+ 0 & a_6 & a_4 & -a_1 \\
+\end{bmatrix},
+\end{align}
+produces eigenvalues behaving as $ \epsilon^{1/2} $ (rather than $\epsilon^{1/4}$). We do not show here the closed-form analytical forms of the eigenvalues (appearing as $\pm $ pairs due to the C-symmetry) because of their lengthy expressions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{ref_nh}
+
+\end{document}

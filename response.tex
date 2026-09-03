@@ -1,0 +1,160 @@
+\documentclass[aps,prb,onecolumn,nofootinbib,citeautoscript,10pt]{revtex4-2} 
+
+
+\synctex=1 
+
+
+\usepackage{amsmath,amssymb} 
+\usepackage{comment}
+
+\usepackage[tight]{subfigure} 
+
+\usepackage[dvipsnames]{xcolor} 
+\usepackage[papersize={8.5in,11in}]{geometry}
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters 
+    pdftoolbar=true,        % show Acrobat
+    pdfmenubar=true,        % show Acrobat 
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=magenta, %red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=blue,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+} 
+
+\geometry{top=1.5cm, left= 1.5 cm, right= 1.5 cm, bottom= 1.5 cm}        
+
+
+
+%========================= PACKAGES ==================================
+\usepackage{dcolumn}
+\usepackage{color}
+\usepackage{amssymb,amsmath}
+\usepackage{tabularx,graphicx}
+\usepackage{epstopdf}
+\usepackage{latexsym}
+\usepackage{colortbl}
+\usepackage{psfrag}
+\usepackage{bbm,bm,array,physics}
+\usepackage{dsfont}
+\usepackage{float, mathrsfs}
+
+\def \nn{\nonumber \\}
+\def\*#1{\boldsymbol{#1}} %\bold font
+\newcommand{\at}[2][]{#1|_{#2}}
+
+\newcommand{\figuretag}[1]{%
+  \addtocounter{figure}{-1}%
+  \renewcommand{\thefigure}{#1}%
+}
+
+
+%=======================================================================
+%========================= ARTICLE STARTS HERE =========================
+%=======================================================================
+\begin{document}
+	
+	
+	
+\noindent Dear Editor,\\
+\\ \noindent Thank you very much for arranging to review our manuscript. We have addressed all the questions/suggestions raised/made by the referee. Detailed responses to the comments of the referee have been provided below (Referee's comments are highlighted in blue). In view of these changes, we trust the manuscript will now be judged suitable for publication. 
+\\\\ \noindent Sincerely,
+	
+\noindent Author
+
+\vspace{0.5 cm }	
+
+
+
+
+
+\section{Response to questions/comments of the Referee:}
+
+\begin{enumerate}
+
+%%%%%%%%%%%%%%
+\item \textcolor{blue}{The manuscript is well structured, mathematically rigorous, and supported by concrete models (e.g., Hopf semimetal, pseudospin-1 model) illustrating EC3 and ES3 structures. Overall, the work provides significant theoretical depth and systematic insight, making it suitable for publication in Physical Review A.}
+
+We thank the referee for recommending the manuscript for publication.
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\item \textcolor{blue}{Why is the system still considered ``exceptional'' after eigenvalue splitting? The paper emphasises that after applying a small perturbation $\epsilon$ near an EP$_n$, the eigenvalues split as $\epsilon^{1/k}$. This splitting does not automatically imply that the system remains an EP. An EP is defined by both eigenvalue degeneracy and a Jordan block (defective eigenvectors). For $\epsilon \neq 0$, the system generally becomes non-degenerate and therefore is no longer an EP in the strict sense. What exactly does the author mean by ``still singular''? Does it refer to the fact that $\epsilon=0$ remains a branch point in the parameter space? Or does it mean that for some fine-tuned directions the system retains partial degeneracy or Jordan structure even for $\epsilon \neq 0$? It is recommended to explicitly distinguish in Sec.~II or Sec.~V.}
+
+We agree that the wording in the original manuscript was imprecise in this aspect. To be explicit, the EP$_n$ itself is strictly the point $\epsilon=0$, at which the eigenvalues are $n$-fold degenerate and the matrix is defective, admitting a single Jordan block, $\mathcal J_n (\lambda)$. For $\epsilon \neq 0$, the perturbed matrix is generically non-degenerate and diagonalisable, so, in the strict sense, the system is no longer sitting at an EP. What we mean by the system ``still being singular'' is precisely the first of the two possibilities the referee raises: $\epsilon=0$ remains a branch point of the multivalued function $\lambda(\epsilon)$, because the eigenvalues, when regarded as functions of the complex deviation-parameter $\epsilon$, only admit a Puiseux (fractional-power) series expansion rather than an ordinary (integer-power) Taylor expansion. It is this non-analyticity of $\lambda(\epsilon)$ at $\epsilon=0$, rather than any residual degeneracy for $\epsilon \neq 0$, that we refer to as the singular behaviour surviving the splitting. We have now added the following clarifying sentence: 
+\\``We emphasise that, for $\epsilon \neq 0$, the perturbed matrix is generically non-degenerate and, hence, is no longer an EP in the strict sense of exact degeneracy plus defectiveness --- the terminology `singular' refers instead to $\epsilon=0$ remaining a branch point of the multivalued function $\lambda(\epsilon)$, whose Puiseux expansion starts at the fractional power $\epsilon^{1/k}$ rather than at $\epsilon^1$.''
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textcolor{blue}{The paper shows that by choosing specific parameters (e.g., $a_4$ in the P-symmetric system), the $\epsilon^{1/2}$ term vanishes and the leading behaviour becomes $\sim \epsilon$. In such cases: does the original EP$_3$ persist? Does it degrade to an EP$_2$ or a Dirac-like crossing? Does this direction-dependent behaviour imply a higher-codimension singular structure in parameter space? A brief geometric picture or a simple example would be helpful.}
+
+
+
+The EP$_3$ itself remains unchanged. The tuning of parameters such as $a_4$ does not modify the defective Hamiltonian at $\epsilon=0$: the matrix at the exceptional point still possesses a three-fold degeneracy with a single $\mathcal{J}_3(0)$ Jordan block. Rather, it selects a special symmetry-preserving perturbation direction in parameter space for which the coefficient of the leading $\epsilon^{1/2}$ contribution in the Puiseux expansion vanishes. Consequently, along this fine-tuned direction the splitting is controlled by the next non-vanishing term and becomes linear in $\epsilon$.
+Thus, the EP$_3$ does not degrade into an EP$_2$, since the Jordan structure at the singular point is unaffected, nor does it become a Dirac crossing in the strict sense, since the degeneracy at $\epsilon=0$ remains exceptional rather than diagonalizable. Nevertheless, along this particular perturbation direction the dispersion away from the EP$_3$ exhibits a Dirac-like linear splitting. Geometrically, the tuning condition defines a lower-dimensional subset of the symmetry-allowed perturbation space. In the P-symmetric case, the vanishing of the $\epsilon^{1/2}$ coefficient imposes one constraint on the four parameters $\{a_1,a_2,a_3,a_4\}$ and therefore defines a codimension-one hypersurface of perturbation directions. Away from this hypersurface, a generic perturbation restores the characteristic EP$_3$ square-root behaviour. Hence, the direction dependence reflects an anisotropic singular response near the EP$_3$, rather than a change in the order or nature of the EP.
+
+We have added the following clarification to the manuscript after the expression for $\varepsilon_2$ in the P-symmetric subsection (and the analogous discussion in the Hopf-semimetal example):
+\\``The directional dependence discussed here should not be interpreted as a change in the nature of the underlying EP. The EP$_3$ remains intact, since the defective Hamiltonian at $\epsilon=0$ continues to possess a single $\mathcal{J}_3(0)$ Jordan block. Tuning parameters such as $a_4$ selects a special symmetry-preserving perturbation direction for which the coefficient of the leading $\epsilon^{1/2}$ term in the Puiseux expansion vanishes. The splitting is then governed by the next non-vanishing contribution, resulting in a linear dependence on $\epsilon$. This does not correspond to a reduction to an EP$_2$ or to a Dirac point; instead, it represents a direction-dependent linear dispersion away from the same EP$_3$. The fine-tuned directions form a codimension-one subset within the symmetry-allowed perturbation space, while generic directions recover the usual $\epsilon^{1/2}$ behaviour.''
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textcolor{blue}{The paper shows that P and C symmetries only allow upper-2 Hessenberg, while PT allows upper-3 Hessenberg. This is a central result, but the argument relies on explicit matrix forms. A more abstract group- or representation-theoretic explanation would be beneficial. How do commutation relations with the symmetry operator enforce the specific upper-triangular structure in the Jordan basis? Can this be generalised to higher dimensions ($s>4$)?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+We have added the following clarification to the revised manuscript:
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\\``While our derivation is presented using explicit matrix forms for transparency, the result admits a more general linear-algebraic interpretation. At an EP, the Hamiltonian is brought to its Jordan normal form, whose generalised eigenvectors constitute a Jordan chain. A symmetry operator $S$ does not act independently on the vectors in this chain. Rather, the symmetry relation, $S \,H\, S^{-1}=\eta \,H$, or $S\, H^{T}\, S^{-1}=\eta \,H$, depending on the symmetry class, requires every symmetry-preserving perturbation to belong to the corresponding intertwiner space of the Jordan representation. In the Jordan basis, this intertwining condition is expected to translate into linear constraints on the perturbation matrix elements, which we find to determine the admissible Hessenberg structure in the cases considered. For the $P$- and $C$-symmetry classes considered here, the symmetry operators square to the identity and induce a $\mathbb{Z}_2$ grading of the Hilbert space. The symmetry condition constrains both the Hamiltonian and every symmetry-preserving perturbation to respect this grading, yielding the characteristic block-off-diagonal structure in the natural basis. Upon transforming to the Jordan basis of the defective matrix, we find, consistent with our explicit construction, that these grading constraints restrict the perturbation to the class of upper-2 Hessenberg matrices.
+%%%%%%%%%%%%%%%%
+By contrast, $PT$ symmetry is implemented by the antiunitary constraint $H=(PK)\,H^{*}\,(PK)^{-1}$, which is an antilinear rather than a complex-linear condition on the Hamiltonian. Consequently, it does not induce an analogous $\mathbb{Z}_2$ grading of the complex vector space, and the corresponding intertwining constraints are correspondingly less restrictive. In the Jordan basis, they permit the larger class of upper-3 Hessenberg perturbations obtained in our explicit construction. We thus expect the Hessenberg bandwidth to be governed by the structure of the symmetry-invariant intertwiner space associated with the Jordan block, rather than by the particular matrix parametrisation used in our calculations, though we have verified this correspondence explicitly rather than in full generality.
+%%%%%%%%%%%%%%%%%%%
+Finally, we note that our choice of symmetry-operator matrices is one convenient realisation of the corresponding symmetry class. One can check explicitly that any other realisation of the symmetry operators leaves both the Jordan normal form and the symmetry constraints and, hence, the admissible perturbation space and Hessenberg bandwidth, unchanged.''
+
+As for the generalisation to $s>4$, we expect the formalism to extend to arbitrary matrix dimension $s$, following the general classification of symmetry classes by Bernard--LeClair~\cite{bernard}. The main challenge is computational rather than conceptual, as the explicit construction of the symmetry-constrained matrices and their transformation to the Jordan basis become increasingly involved with increasing $s$. The Appendix already illustrates this for two $4\times4$ cases: the $P$-symmetric model admits an EP$_4$ with the generic $\epsilon^{1/4}$ splitting, whereas the $C$-symmetric model exhibits the weaker $\epsilon^{1/2}$ behaviour because its Jordan normal form decomposes as $\mathcal{J}_1(0)\oplus\mathcal{J}_3(0)$, rather than a single $\mathcal{J}_4(0)$ block. This example demonstrates that, even within a given symmetry class, the leading singular behaviour is determined by the Jordan-block structure permitted by the symmetry, rather than by the matrix dimension alone.
+
+
+
+
+%%%%%%%%%%%%%%%%
+\item \textcolor{blue}{In Sec.~V, direction-dependent sensitivity is mentioned for EP-based sensors. However, if the system is no longer at an EP after perturbation, does the enhanced sensitivity remain? Sensors typically operate near an EP, not exactly at it. The branch-point singularity ($\epsilon^{1/k}$) is the source of sensitivity, even when the system is non-degenerate for $\epsilon \neq 0$.}
+
+We thank the referee for raising this important point. We agree that EP-based sensors are typically operated in the vicinity of an EP rather than exactly at the degeneracy point, and that the relevant question is whether the enhanced response persists once the perturbation has lifted the degeneracy. We have revised the discussion to clarify this distinction.
+The enhanced spectral sensitivity does not require the perturbed system to remain degenerate. Instead, it originates from the branch-point structure of the eigenvalues in the vicinity of the EP. For a perturbation $\epsilon$, the eigenvalue splitting behaves as $\lambda(\epsilon)-\lambda(0)\sim\epsilon^{1/k}$, and therefore the enhanced response arises from the non-analytic dependence of the eigenvalues on the perturbation in the vicinity of the EP. Thus, although the system is strictly non-degenerate for any finite $\epsilon\neq0$, operation sufficiently close to the EP allows one to exploit the enhanced spectral response associated with the nearby branch-point singularity.
+We emphasise, however, that enhanced eigenvalue sensitivity does not automatically imply enhanced sensing precision. The measurable response depends not only on the eigenvalue splitting, but also on the perturbation dependence of the eigenvectors, mode non-orthogonality, and measurement noise. As discussed in Refs.~\cite{Langbein,emil-budich}, these effects can compensate the sub-linear eigenvalue splitting in certain sensing protocols, leading to an overall response that scales linearly with the perturbation. Therefore, while the branch-point singularity provides the origin of the enhanced spectral sensitivity near an EP, a complete assessment of sensor performance requires analysing the full measurement response rather than the eigenvalue splitting alone.
+
+We have added the following clarification in Sec.~V:
+\\``We emphasise that the enhanced sensitivity is not fully contingent on exact degeneracy: it originates from the branch-point singularity of the eigenvalues in the vicinity of the EP. Since $\lambda(\epsilon)-\lambda(0)\sim\epsilon^{1/k}$, a sensor operated at small but finite $\epsilon$, where the system is non-degenerate, can still benefit from the enhanced spectral response associated with the nearby EP. We note, however, that enhanced spectral sensitivity alone does not necessarily imply enhanced measurement precision, as the full sensing response is also influenced by eigenvector dynamics and noise properties~\cite{Langbein,emil-budich}.''
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textcolor{blue}{The manuscript repeatedly mentions ``topological phases'', ``topologically robust phenomena'', and ``symmetry-protected nodal phases'', but it does not present any analysis or evidence of a topological phase transition. No topological invariant (Chern number, winding number, biorthogonal polarisation, etc.) is computed or compared across parameter regions. The existence of an EP does not by itself constitute a topological phase transition. The author should clarify it.}
+
+
+We agree that the presence of an EP alone does not constitute a topological phase transition in the conventional Hermitian sense, where one demonstrates a change in a bulk invariant such as the Chern number, winding number, or biorthogonal polarisation. We have revised the manuscript to make this distinction explicit and to clarify what we mean by ``topological" in this context:
+\\``Our terminology involving ``topological phases'' and``topologically robust phenomena'' follows the established fact that nodal degeneracies are far more abundant and stable in NH systems than in their Hermitian counterparts, as reviewed in Ref.~\cite{emil_review}. In a Hermitian system, a generic band touching requires three real conditions to be satisfied simultaneously --- therefore, such degeneracies are fine-tuned in 2D and become stable only in 3D. In NH systems, by contrast, a degeneracy is fixed by the vanishing of the complex discriminant of the characteristic polynomial, requiring only two real conditions. Therefore, EPs are already generic and stable in 2D, while still carrying a well-defined topological charge associated with spectral winding (vorticity) \cite{Shen2018, Kawabata2019}. Recent work has further established EPs as topological singularities separating distinct NH spectral phases \cite{flore-elisabet, flore-elisabet0, ips-bp}. It is this reduced-codimension stability of EPs and, in the symmetry-constrained cases treated here, their additional protection under various symmetries (as established in our earlier work \cite{ips-emil}) motivate our terminology. We stress that this is a statement about the local stability and charge of the exceptional degeneracy itself, not about a global bulk invariant. A genuine bulk invariant, such as the biorthogonal polarisation, is indeed computable in NH lattice models and has been shown to jump precisely at bulk phase transitions \cite{flore-elisabet, flore-elisabet0, ips-bp}. However, no such invariant is computed or compared across parameter regions in the present work, and we do not claim a conventional bulk topological phase transition. Last but not the least, emergence of EPs do indeed characterise phase transitions in systems hosting chiral Majorana zero modes \cite{ips-ep-epl, ips-tewari}.''
+
+
+
+
+%%%%%%%%%%%%%%%%%
+\item \textcolor{blue}{In Page 4, ``$f_1 = $ and $f_2=0$'', what is $f_1$? In Sec.~V, ``cna'' should be ``can''.}
+
+We are grateful to the referee for identifying these typographical errors.  We have now corrected those. $f_1 $ is the function defined in Eq. (15).
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{List of changes}
+
+We have marked all additions in the manuscript with the colour red.
+	
+\bibliography{ref_nh}
+
+\end{document}

@@ -1,0 +1,16 @@
+Dear Editor,
+
+We write to submit our manuscript for your consideration, which builds directly upon our earlier work published in Physical Review Letters 127, 186601 (2021). That paper — widely cited in the context of higher-order exceptional points (EPs) — established the stability of higher-order EPs in realistic non-Hermitian (NH) systems and characterized their behavior under P- and PT-symmetries in three-band models. In particular, we showed that these two symmetry classes give rise to square-root and cube-root branch-point singularities, respectively. A fundamental question remained open: why does the order of the singularity depend on the symmetry class of the parent NH Hamiltonian?
+
+The present manuscript answers this question. We identify the underlying mathematical mechanism — the upper-k Hessenberg structure of symmetry-allowed perturbation matrices in the Jordan normal basis — that governs the leading-order algebraic singularity at an EP of any generic complex matrix. This provides a unified and predictive framework: given a symmetry class, one can systematically determine the form of the Puiseux series expansion about a defective point. We substantiate this framework with NH generalizations of well-known three-dimensional three-band systems across the P-, C-, and PT-symmetry classes, explicitly mapping out their exceptional degeneracies in the form of exceptional curves and surfaces. The analysis is further extended to four-band models in the supplemental material, where additional rich behavior emerges.
+
+Beyond its theoretical significance, this work has direct practical implications. The ability to predict and engineer the Puiseux series — including conditions under which leading-order coefficients vanish — opens a route to designing EP-based sensors with tunable, parameter- or direction-dependent sensitivity. We believe this manuscript will serve as a foundational reference for both theorists and experimentalists working on NH systems.
+
+Given the scope and impact of our prior PRL publication in this area, we are confident this work will be of broad interest to the readership of Physical Review Letters. We would also like to suggest, if appropriate, that the manuscript be reviewed by referees familiar with our earlier paper, as they would be well-positioned to assess the significance of these advances.
+
+Sincerely,
+Ipsita Mandal
+
+
+This manuscript resolves a fundamental open question in non-Hermitian physics: why does the order of the algebraic singularity at an exceptional point depend on the symmetry class of the Hamiltonian? We establish a precise mathematical framework — grounded in the Hessenberg structure of symmetry-allowed perturbations — that predicts a priori the leading-order Puiseux expansion at any exceptional degeneracy. This unified, predictive principle advances the theoretical foundation of non-Hermitian topology and has direct implications for engineering EP-based sensors with tunable sensitivity. Given PRL's readership spanning condensed matter, photonics, and quantum systems, this work is timely and of broad interdisciplinary appeal.
+
