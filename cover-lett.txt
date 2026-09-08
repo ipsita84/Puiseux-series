@@ -11,6 +11,3 @@ Given the scope and impact of our prior PRL publication in this area, we are con
 Sincerely,
 Ipsita Mandal
 
-
-This manuscript resolves a fundamental open question in non-Hermitian physics: why does the order of the algebraic singularity at an exceptional point depend on the symmetry class of the Hamiltonian? We establish a precise mathematical framework — grounded in the Hessenberg structure of symmetry-allowed perturbations — that predicts a priori the leading-order Puiseux expansion at any exceptional degeneracy. This unified, predictive principle advances the theoretical foundation of non-Hermitian topology and has direct implications for engineering EP-based sensors with tunable sensitivity. Given PRL's readership spanning condensed matter, photonics, and quantum systems, this work is timely and of broad interdisciplinary appeal.
-
