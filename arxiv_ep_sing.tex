@@ -73,7 +73,7 @@
 
 \begin{abstract}
 %%%%%%%%%%%%%%%%%%%%%%%
-We develop a systematic framework for determining the nature of exceptional points of $n^{\rm th}$ order (EP$_n$s) in non-Hermitian (NH) systems, represented by complex square matrices. By expressing symmetry-preserving perturbations ($\propto \epsilon$) in the Jordan-normal basis of the defective matrix at an EP$_n$, we show that the upper-$k$ Hessenberg structure of the perturbation matrix directly dictates the leading-order eigenvalue- and eigenvector-splitting to be $\propto  \epsilon^{1/k}$, when expanded in a Puiseux series. Applying this to three-band NH models invariant under parity (P), charge-conjugation (C), or parity-time-reversal (PT), we find that EP$_3$s in P- and C-symmetric systems are restricted to at most $\sim  \epsilon^{1/2}$ branch points, while PT-symmetric systems generically support EP$_3$s with the strongest possible singularities (viz. $\sim \epsilon^{1/3}$). We illustrate these results with concrete three-dimensional models in which exceptional curves and surfaces emerge. We further show that fine-tuned perturbations can suppress the leading-order branch point to a less-singular splitting, which have implications for designing direction-dependent EP-based sensors. The appendix extends the analysis to four-band P- and C-symmetric models, establishing the existence of EP$_4$s with $\sim \epsilon^{1/4}$ and  $\sim \epsilon^{1/2}$ singularities, respectively.
+We develop a systematic framework for determining the nature of exceptional points of $n^{\rm th}$ order (EP$_n$s) in non-Hermitian (NH) systems, represented by complex square matrices. By expressing symmetry-preserving perturbations ($\propto \epsilon$) in the Jordan-normal basis of the defective matrix at an EP$_n$, we show that the upper-$\ell$ Hessenberg structure of the perturbation matrix directly dictates the leading-order eigenvalue- and eigenvector-splitting to be $\propto  \epsilon^{1/\ell}$, when expanded in a Puiseux series. Applying this to three-band NH models invariant under parity (P), charge-conjugation (C), or parity-time-reversal (PT), we find that EP$_3$s in P- and C-symmetric systems are restricted to at most $\sim  \epsilon^{1/2}$ branch points, while PT-symmetric systems generically support EP$_3$s with the strongest possible singularities (viz. $\sim \epsilon^{1/3}$). We illustrate these results with concrete three-dimensional models in which exceptional curves and surfaces emerge. We further show that fine-tuned perturbations can suppress the leading-order branch point to a less-singular splitting, which have implications for designing direction-dependent EP-based sensors. The appendix extends the analysis to four-band P- and C-symmetric models, establishing the existence of EP$_4$s with $\sim \epsilon^{1/4}$ and  $\sim \epsilon^{1/2}$ singularities, respectively.
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \end{abstract}
 
@@ -98,17 +98,17 @@ The appendix deals with analysing C- and P-symmetric 4-band models.
 \section{Perturbation around an exceptional degeneracy}
 \label{sechess}
 
-In this section, we will provide the mathematical definitions required to understand the singularity structure of exceptional degeneracies for generic complex matrices. An $s\times s$ matrix which has $(\ell-1)$ sub-diagonals, adjacent to the principal diagonal in the lower half, which do not identically comprise zero elements, is referred to as a upper-$p$ Hessenberg matrix, $B_{s, \ell}$. In other words, if the matrix-elements are denoted as $m_{i,j}$, then we have $m_{i, j} = 0 $ for $i > k + \ell-1$. In this language, the common nomenclature of an \textit{upper Hessenberg matrix} is actually an upper-2 Hessenberg matrix. Let us consider a Jordan block, $ \mathcal {J}_s (\lambda) $,
-of dimension $s$ and $s$-fold degenerate eigenvalue, $\lambda $. By examining the perturbed matrix, $ \mathcal {J}_s + \epsilon \, B_{s_i, \ell}$, Ref.~\cite{ma-pert} has derived how the degenerate eigenvalues of $ \mathcal {J}_s  $ split under a perturbation of the form  $\epsilon \, B_{s_i, \ell}$. The main result can be summarised as the nature of the eigenvalues ($\lbrace \lambda_{s_i n_{s_i}} \rbrace $) of all possible perturbed matrices, can be grouped in the following manner, characterised by the respective Puiseux series:
+In this section, we will provide the mathematical definitions required to understand the singularity structure of exceptional degeneracies for generic complex matrices. An $s\times s$ matrix which has $(\ell-1)$ sub-diagonals, adjacent to the principal diagonal in the lower half, which do not identically comprise zero elements, is referred to as a upper-$\ell$ Hessenberg matrix, $B_{s, \ell}$. In other words, if the matrix-elements are denoted as $m_{i,j}$, then we have $m_{i, j} = 0 $ for $i > j + \ell-1$. In this language, the common nomenclature of an upper Hessenberg matrix is actually an upper-2 Hessenberg matrix. Let us consider a Jordan block, $ \mathcal {J}_s (\lambda) $,
+of dimension $s$ and $s$-fold degenerate eigenvalue, $\lambda $. By examining the perturbed matrix, $ \mathcal {J}_s + \epsilon \, B_{s, \ell}$, Ref.~\cite{ma-pert} has derived how the degenerate eigenvalues of $ \mathcal {J}_s  $ split under a perturbation of the form  $\epsilon \, B_{s, \ell}$. The main result can be summarised as the nature of the eigenvalues ($\lbrace \lambda_{i, n_{s_i}} \rbrace $) of all possible perturbed matrices, can be grouped in the following manner, characterised by the respective Puiseux series:
 %%%%%%%%%%%%%%
 \begin{enumerate}
 
 \item Prepare all possible sets of $\lbrace s_i \rbrace $, such that $\sum_i s_i =  s \,.$
 
-\item For each $s_i$, we have a ring of size $s_i$, defined by the elements,
+\item For each $i$, we have a ring of size $s_i$, defined by the elements,
 %%%%%%%%%%%%
 \begin{align}
-\lambda_{i n_{s_i}} = \lambda + \alpha_{i, 1}\, \omega_{s_i}^{n_{s_i}} \,\epsilon^{\frac{1}{s_i}}
+\lambda_{i, n_{s_i}} = \lambda + \alpha_{i, 1}\, \omega_{s_i}^{n_{s_i}} \,\epsilon^{\frac{1}{s_i}}
 + \alpha_{i, 2}\, \omega_{s_i}^{ 2\,n_{s_i}} \,\epsilon^{\frac{2}{s_i}} + \cdots\,,
 %%%%%%%%%%%%%%%%%%%%%%%
 \quad \omega_{s_i} = e^{\frac{2\,\pi\,i} {s_i}}\,,
@@ -125,35 +125,35 @@ Let us illustrate this for some values of $s$.
 \item \underline{$s = 2$:}
 \\We can have two sets, viz. $\lbrace s_1=1, \, s_2 = 1 \rbrace$ and $ \lbrace s_1= 2 \rbrace $. For set 1, we have $\omega_{s_1} = \omega_{s_2} = \omega_1 \equiv 1$ and the eigenvalues behaving as
 \begin{align}
-\lambda_{1 1} = \lambda + \alpha_{1, 1}\, \epsilon
+\lambda_{1, 1} = \lambda + \alpha_{1, 1}\, \epsilon
 + \alpha_{1, 2}\,\epsilon^2 + \cdots \text{ and }
-\lambda_{2 1} = \lambda + \alpha_{2, 1}\, \epsilon
+\lambda_{2, 1} = \lambda + \alpha_{2, 1}\, \epsilon
 + \alpha_{2, 2}\,\epsilon^2 + \cdots \,.
 \end{align}
 These give rise to 2 rings of the trivial size of unity.
 %%%%%%%%%%%
 For set 2, we have $\omega_{s_1} =  \omega_2 \equiv -1 $ and the eigenvalues behaving as
 \begin{align}
-\lambda_{2 1} = \lambda - \alpha_{2, 1}\,\epsilon^{\frac{1}{2}}
-+ \alpha_{2, 2}\, \epsilon + \cdots \text{ and }
+\lambda_{1, 1} = \lambda - \alpha_{1, 1}\,\epsilon^{\frac{1}{2}}
++ \alpha_{1, 2}\, \epsilon + \cdots \text{ and }
 %%%%%%%%%%%%%%
-\lambda_{2 2} = \lambda + \alpha_{2, 1} \,  \epsilon
-+ \alpha_{2, 2} \, \epsilon^2 + \cdots \,.
+\lambda_{1, 2} = \lambda + \alpha_{1, 1} \,  \epsilon
++ \alpha_{1, 2} \, \epsilon^2 + \cdots \,.
 \end{align}
 These constitute 1 ring of size 2.
  
 \item \underline{$s = 3$:}
-\\We can have two sets, viz. $\lbrace s_1=1, \, s_2 = 1, \, s_3 = 1 \rbrace$, $ \lbrace s_1= 2 , \, s_2 = 1 \rbrace $,
+\\We can have three sets, viz. $\lbrace s_1=1, \, s_2 = 1, \, s_3 = 1 \rbrace$, $ \lbrace s_1= 2 , \, s_2 = 1 \rbrace $,
 and $ \lbrace s_1= 3 \rbrace $.
 \\For set 1, we have $\omega_{s_1} = \omega_{s_2} = \omega_{s_3} = \omega_1 \equiv 1$ and the eigenvalues behaving as
 \begin{align}
-\lambda_{1 1} = \lambda + \alpha_{1, 1}\, \epsilon
+\lambda_{1, 1} = \lambda + \alpha_{1, 1}\, \epsilon
 + \alpha_{1, 2}\,\epsilon^2 + \cdots\,, \quad
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lambda_{2 1} = \lambda + \alpha_{2, 1}\, \epsilon
+\lambda_{2, 1} = \lambda + \alpha_{2, 1}\, \epsilon
 + \alpha_{2, 2}\,\epsilon^2 + \cdots \,, \text{ and }
 %%%%%%%%%%%%%%%%%%%%%%%
-\lambda_{3 1} = \lambda + \alpha_{3, 1}\, \epsilon
+\lambda_{3, 1} = \lambda + \alpha_{3, 1}\, \epsilon
 + \alpha_{3, 2}\,\epsilon^2 + \cdots \,.
 \end{align}
 %%%%%%%%%%%
@@ -162,29 +162,29 @@ These give rise to 3 rings of the trivial size of unity.
 For set 2, we have $\omega_{s_1} =  \omega_2 \equiv - 1 $, $\omega_{s_2} =  \omega_1 \equiv 1 $, and the eigenvalues behaving as
 \begin{align}
 \label{ep3-sqrt}
-\lambda_{1 1} = \lambda - \alpha_{1, 1}\, \epsilon^{\frac{1}{2}}
+\lambda_{1, 1} = \lambda - \alpha_{1, 1}\, \epsilon^{\frac{1}{2}}
 + \alpha_{1, 2}\, \epsilon + \cdots\,, \quad
 %%%%%%%%%%%%%%
-\lambda_{1 2} = \lambda + \alpha_{1, 1} \, \epsilon^{\frac{1}{2}}
+\lambda_{1, 2} = \lambda + \alpha_{1, 1} \, \epsilon^{\frac{1}{2}}
 + \alpha_{1, 2} \,\epsilon + \cdots \,, \text{ and }
 %%%%%%%%%%%%%%%%%%%%%%
-\lambda_{2 1} = \lambda + \alpha_{2, 1}\, \epsilon
+\lambda_{2, 1} = \lambda + \alpha_{2, 1}\, \epsilon
 + \alpha_{2, 2}\,\epsilon^2 + \cdots \,.
 \end{align}
 %%%%%%%%%%%
 These constitute 1 ring of size 2 and 1 trivial ring of size unity.
 For set 3, we have $\omega_{s_3} =  \omega_3  \equiv e^{\frac{2\,\pi\,i} {3}} $ and the eigenvalues behaving as
 \begin{align}
-& \lambda_{3 1} = \lambda + \alpha_{1, 1}\, \omega_3 \,\epsilon^{\frac{1}{3}}
+& \lambda_{1, 1} = \lambda + \alpha_{1, 1}\, \omega_3 \,\epsilon^{\frac{1}{3}}
 + \alpha_{1, 2}\, \omega_3^2 \,\epsilon^{\frac{2}{3}} 
 + \alpha_{1, 3}\, \omega_3^3 \,\epsilon + \cdots\,, \quad
 %%%%%%%%%%%%%%
-\lambda_{3 2} = \lambda + \alpha_{1, 1} \, \omega_3^2\, \epsilon^{\frac{1}{3}}
+\lambda_{1, 2} = \lambda + \alpha_{1, 1} \, \omega_3^2\, \epsilon^{\frac{1}{3}}
 + \alpha_{1, 2} \, \omega_3^4 \,\epsilon^{\frac{2}{3}} 
 + \alpha_{1, 3}\, \omega_3^6 \,\epsilon + \cdots \,,
 \nn & \text{and }
 %%%%%%%%%%%%%%%%%%%%%%
-\lambda_{3 3} = \lambda + \alpha_{1, 1} \, \omega_3^3\, \epsilon^{\frac{1}{3}}
+\lambda_{1, 3} = \lambda + \alpha_{1, 1} \, \omega_3^3\, \epsilon^{\frac{1}{3}}
 + \alpha_{1, 2} \, \omega_3^6 \,\epsilon^{\frac{2}{3}} 
 + \alpha_{1, 3}\, \omega_3^9 \,\epsilon + \cdots\,.
 \end{align}
@@ -193,7 +193,7 @@ These constitute 1 ring of size 3.
  
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%
-We emphasise that, for $\epsilon \neq 0$, the perturbed matrix is generically non-degenerate and, hence, is no longer an EP in the strict sense of exact degeneracy plus defectiveness --- the terminology `singular' refers instead to $\epsilon=0$ remaining a branch point of the multivalued function $\lambda(\epsilon)$, whose Puiseux expansion starts at the fractional power $\epsilon^{1/k}$ rather than at $\epsilon^1$.
+We emphasise that, for $\epsilon \neq 0$, the perturbed matrix is generically non-degenerate and, hence, is no longer an EP in the strict sense of exact degeneracy plus defectiveness --- the terminology `singular' refers instead to $\epsilon=0$ remaining a branch point of the multivalued function $\lambda(\epsilon)$, whose Puiseux expansion starts at the fractional power $\epsilon^{1/\ell}$ rather than at $\epsilon^1$.
 
 %%%%%%%%%%%%%%%%%%
 \section{Review of exceptional points in two-band models}
@@ -535,13 +535,13 @@ with respect to the location of the EC$_3$, the 3-fold degenerate zero eigenvalu
 \section{Discussions and future outlook}
 \label{secsum}
 
-In this paper, we have outlined an analysis to determine the order of singularitites of exceptional degeneracies, given an $s$-dimensional complex square matrix. In particular, by determining its symmetry class \cite{bernard}, the kind of allowed symmetry-preserving perturbations (about the singular matrix at an EP) is constrained. On transforming an allowed perturbing matrix to the Jordan-normal basis of the defective matrix, its upper-$k$ Hessenberg structure (where $k$ is an integer $\leq s $) is revealed, which tells us the leading-order algebraic singularity (i.e., a branch point) that characterises the corresponding EP, which also shows up as the leading-order fractional power, $1/k$, of the deviation-parameter ($\epsilon$) away from the EP --- the degenerate eigenvalues and eigenvectors splitting goes as $\epsilon^{1/k} $. After providing the generic prescription, we moved onto apply the formalism to 3-band models, considering 3 different symmetry classes (viz. P-, C-, and PT-symmetries). We have proven that the most singular behaviour that can appear in the P- and C-symmetric NH Hamiltonians is of the square-root variety. On the other hand, PT-symmetric NH Hamitlonians can generically host the strongest singular behaviour possible for 3-band systems, namely $\epsilon^{1/3} $.
+In this paper, we have outlined an analysis to determine the order of singularitites of exceptional degeneracies, given an $s$-dimensional complex square matrix. In particular, by determining its symmetry class \cite{bernard}, the kind of allowed symmetry-preserving perturbations (about the singular matrix at an EP) is constrained. On transforming an allowed perturbing matrix to the Jordan-normal basis of the defective matrix, its upper-$\ell$ Hessenberg structure (where $\ell$ is an integer $\leq s $) is revealed, which tells us the leading-order algebraic singularity (i.e., a branch point) that characterises the corresponding EP, which also shows up as the leading-order fractional power, $1/\ell$, of the deviation-parameter ($\epsilon$) away from the EP --- the degenerate eigenvalues and eigenvectors splitting goes as $\epsilon^{1/\ell} $. After providing the generic prescription, we moved onto apply the formalism to 3-band models, considering 3 different symmetry classes (viz. P-, C-, and PT-symmetries). We have proven that the most singular behaviour that can appear in the P- and C-symmetric NH Hamiltonians is of the square-root variety. On the other hand, PT-symmetric NH Hamitlonians can generically host the strongest singular behaviour possible for 3-band systems, namely $\epsilon^{1/3} $.
 Because of the spectator flat-band in the 3-band P- and C-symmetric systems (constrained to be present by the symmetries), the other two bands are negative of each other, which immediately tells us that there is no possibility getting exceptional singularities of order two. On the other hand, we do get EC$_2$ (singular curves) in the 3D PT-symmetric systems with 3 bands. Overall, we demonstrated the emergence of singularities of all possible co-dimensions --- EPs, ECs, and ESs --- in the various systems studied here. Continuing our procedure for higher-band models will tell us the strongest algebraic singularities around their EPs. For example, 4-band P- and C-symmetric $4\times 4$ matrices allow EP$_4$s which split as $\epsilon^{1/4}$ and $\epsilon^{1/2}$, respectively (see appendix). The curious behaviour of the the latter originates from the Jordanl-normal comprising the Jordan blocks, $\mathcal{J}_1 (0)$ and $\mathcal{J}_3 (0)$. 
 
 Through our mathematical analysis, we have been able to pinpoint the reason behind the singular of a particular degree, emerging for an higher-order EP (or EC or ES) in a system protected by a specific symmetry.
 Furthermore, we have demonstrated that the perturbations can be fine-tuned such that the singular behaviour is endowed with a directional dependence --- this have been demonstrated in the (1) P- and C-symmetric systems whose energy-splittings can have either $\sim \epsilon$ (linear) or $\epsilon^{1/2}$ (square-root) nature; and (2) PT-symmetric systems whose energy-splittings can have either $\epsilon^{1/2}$ (square-root) or $\epsilon^{1/3}$ (cube-root) nature. This can be utilised in designing multi-functional EP-based sensors \cite{emil-budich}, which can now have direction-dependent sensitivity. 
 %%%%%%%%%%%%
-We emphasise that the enhanced sensitivity is not fully contingent on exact degeneracy: it originates from the branch-point singularity of the eigenvalues in the vicinity of the EP. Since $\lambda(\epsilon)-\lambda(0)\sim\epsilon^{1/k}$, a sensor operated at small but finite $\epsilon$, where the system is non-degenerate, can still benefit from the enhanced spectral response associated with the nearby EP. We note, however, that enhanced spectral sensitivity alone does not necessarily imply enhanced measurement precision, as the full sensing response is also influenced by eigenvector dynamics and noise properties~\cite{Langbein,emil-budich}.
+We emphasise that the enhanced sensitivity is not fully contingent on exact degeneracy: it originates from the branch-point singularity of the eigenvalues in the vicinity of the EP. Since $\lambda(\epsilon)-\lambda(0)\sim\epsilon^{1/\ell}$, a sensor operated at small but finite $\epsilon$, where the system is non-degenerate, can still benefit from the enhanced spectral response associated with the nearby EP. We note, however, that enhanced spectral sensitivity alone does not necessarily imply enhanced measurement precision, as the full sensing response is also influenced by eigenvector dynamics and noise properties~\cite{Langbein,emil-budich}.
 
 
 While our derivation is presented using explicit matrix forms for transparency, the result admits a more general linear-algebraic interpretation. At an EP, the Hamiltonian is brought to its Jordan normal form, whose generalised eigenvectors constitute a Jordan chain. A symmetry operator $S$ does not act independently on the vectors in this chain. Rather, the symmetry relation, $S \,H\, S^{-1}=\eta \,H$, or $S\, H^{T}\, S^{-1}=\eta \,H$, depending on the symmetry class, requires every symmetry-preserving perturbation to belong to the corresponding intertwiner space of the Jordan representation. In the Jordan basis, this intertwining condition is expected to translate into linear constraints on the perturbation matrix elements, which we find to determine the admissible Hessenberg structure in the cases considered. For the $P$- and $C$-symmetry classes considered here, the symmetry operators square to the identity and induce a $\mathbb{Z}_2$ grading of the Hilbert space. The symmetry condition constrains both the Hamiltonian and every symmetry-preserving perturbation to respect this grading, yielding the characteristic block-off-diagonal structure in the natural basis. Upon transforming to the Jordan basis of the defective matrix, we find, consistent with our explicit construction, that these grading constraints restrict the perturbation to the class of upper-2 Hessenberg matrices.
@@ -552,7 +552,7 @@ Finally, we note that our choice of symmetry-operator matrices is one convenient
 
 Our terminology involving ``topological phases'' and``topologically robust phenomena'' follows the established fact that nodal degeneracies are far more abundant and stable in NH systems than in their Hermitian counterparts, as reviewed in Ref.~\cite{emil_review}. In a Hermitian system, a generic band touching requires three real conditions to be satisfied simultaneously --- therefore, such degeneracies are fine-tuned in 2D and become stable only in 3D. In NH systems, by contrast, a degeneracy is fixed by the vanishing of the complex discriminant of the characteristic polynomial, requiring only two real conditions. Therefore, EPs are already generic and stable in 2D, while still carrying a well-defined topological charge associated with spectral winding (vorticity) \cite{Shen2018, Kawabata2019}. Recent work has further established EPs as topological singularities separating distinct NH spectral phases \cite{flore-elisabet, flore-elisabet0, ips-bp}. It is this reduced-codimension stability of EPs and, in the symmetry-constrained cases treated here, their additional protection under various symmetries (as established in our earlier work \cite{ips-emil}) motivate our terminology. We stress that this is a statement about the local stability and charge of the exceptional degeneracy itself, not about a global bulk invariant. A genuine bulk invariant, such as the biorthogonal polarisation, is indeed computable in NH lattice models and has been shown to jump precisely at bulk phase transitions \cite{flore-elisabet, flore-elisabet0, ips-bp}. However, no such invariant is computed or compared across parameter regions in the present work, and we do not claim a conventional bulk topological phase transition. Last but not the least, emergence of EPs do indeed characterise phase transitions in systems hosting chiral Majorana zero modes \cite{ips-ep-epl, ips-tewari}.
 
-In the future, it will be worthwhile to explore how to design a bidirectional sensor, based on our theoretical observations. Another interesting direction is to investigate if and how the behaviour of non-Hermitian skin effects (NHSEs) \cite{kang-emil, ips-yao-lee} change with the degree of the EP-singularity and whether this can be traced back to the upper-$k$ value of the perturbing Hessenberg matrix. Attached to this is the question of the directional dependence of the NHSEs connected with the differing eigensystem splitting depending on the perturbing parameters, if there are NH topological invariants to characterise the different scenarios \cite{flore-elisabet0, flore-elisabet, maria_emil, ips-bp}, and if the distinctions can be meaningfully quantified and identified in processes like topological pumping of charges \cite{zhenming, ips-NH-pumping}.
+In the future, it will be worthwhile to explore how to design a bidirectional sensor, based on our theoretical observations. Another interesting direction is to investigate if and how the behaviour of non-Hermitian skin effects (NHSEs) \cite{kang-emil, ips-yao-lee} change with the degree of the EP-singularity and whether this can be traced back to the upper-$\ell$ value of the perturbing Hessenberg matrix. Attached to this is the question of the directional dependence of the NHSEs connected with the differing eigensystem splitting depending on the perturbing parameters, if there are NH topological invariants to characterise the different scenarios \cite{flore-elisabet0, flore-elisabet, maria_emil, ips-bp}, and if the distinctions can be meaningfully quantified and identified in processes like topological pumping of charges \cite{zhenming, ips-NH-pumping}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgments}

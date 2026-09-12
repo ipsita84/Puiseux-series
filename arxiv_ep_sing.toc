@@ -1,0 +1,18 @@
+\contentsline {title}{Puiseux series about exceptional singularities dictated by symmetry-allowed Hessenberg forms of perturbation matrices}{1}{section*.2}%
+\contentsline {abstract}{Abstract}{1}{section*.1}%
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{section*.3}%
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Introduction}{1}{section*.4}%
+\contentsline {section}{\numberline {II}Perturbation around an exceptional degeneracy}{2}{section*.5}%
+\contentsline {section}{\numberline {III}Review of exceptional points in two-band models}{3}{section*.6}%
+\contentsline {section}{\numberline {IV}Exceptional singularities in three-band models}{3}{section*.7}%
+\contentsline {subsection}{\numberline {A}P-symmetric systems}{3}{section*.8}%
+\contentsline {subsection}{\numberline {B}C-symmetric systems}{6}{section*.9}%
+\contentsline {subsection}{\numberline {C}PT-symmetric systems}{6}{section*.10}%
+\contentsline {section}{\numberline {V}Discussions and future outlook}{8}{section*.11}%
+\contentsline {section}{\numberline {}Acknowledgments}{9}{section*.12}%
+\appendix 
+\contentsline {section}{\numberline {A}P-symmetric $4 \times 4$ matrix}{9}{section*.13}%
+\contentsline {section}{\numberline {B}C-symmetric $4 \times 4$ matrix}{10}{section*.14}%
+\contentsline {section}{\numberline {}References}{10}{section*.15}%
